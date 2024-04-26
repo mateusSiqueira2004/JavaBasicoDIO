@@ -88,5 +88,18 @@ public class Operadores {
         String nome2 = new String("Mateus");
 
         System.out.println(nome1.equals(nome2));
+
+        System.out.println("\n------------------\nOperadores Lógicos\n\n");
+
+        boolean condicional1 = true;
+        boolean condicional2 = false;
+
+        if(condicional1 && (7>4)){
+            System.out.println("são verdadeiras");
+        }
+        if(condicional1 || condicional2){
+            System.out.println("uma das condicoes é verdadeira");
+        }
+
     }
 }
