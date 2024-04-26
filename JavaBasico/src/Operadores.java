@@ -27,6 +27,7 @@ public class Operadores {
 
         System.out.println(concatenacao);
 
+        System.out.println("\n------------------\nAritmetica\n\n");
         int numero = 5;
 
         System.out.println(- numero);
@@ -46,6 +47,8 @@ public class Operadores {
 
         System.out.println( ++ numero);
 
+        System.out.println("\n------------------\nBooleans\n\n");
+
         boolean variavel = true;
 
         System.out.println(!variavel);
@@ -54,5 +57,12 @@ public class Operadores {
 
         System.out.println(variavel);
 
+        System.out.println("\n------------------\nTernários\n\n");
+
+        int a = 5, b = 6;
+
+        String resultado = a == b ? "verdadeiro" : "falso";
+        
+        System.out.println(resultado);
     }
 }
