@@ -21,8 +21,11 @@ public class Notas {
 
             System.out.println("Deseja continuar? (S/N)");
             String continua = terminal.nextLine();
-            if(continua.equals("N"))
+            if(continua.equalsIgnoreCase("N"))
                 break;
+            
         }
+
+        terminal.close();
     }
 }
