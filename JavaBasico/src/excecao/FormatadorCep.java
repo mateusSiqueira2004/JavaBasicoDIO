@@ -2,7 +2,7 @@ package excecao;
 public class FormatadorCep{
     public static void main(String[] args) {
         try {
-            String cepFormatado = formatarCep("23765064");
+            String cepFormatado = formatarCep("2365064");
             System.out.println(cepFormatado);
         } catch (CepInvalidoException ex) {
             System.out.println("cep inválido");
