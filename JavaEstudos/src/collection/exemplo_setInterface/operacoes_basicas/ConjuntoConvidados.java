@@ -30,4 +30,26 @@ public class ConjuntoConvidados {
     public void exibirConvidados(){
         System.out.println(convidadoSet);
     }
+
+    public static void main(String[] args) {
+        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " dentro do Set");
+
+        conjuntoConvidados.adicionarConvidado("Nome 1", 1234);
+        conjuntoConvidados.adicionarConvidado("Nome 2", 1235);
+        conjuntoConvidados.adicionarConvidado("Nome 3", 1236);
+        conjuntoConvidados.adicionarConvidado("Nome 4", 1237);
+
+        
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " dentro do Set");
+
+        conjuntoConvidados.exibirConvidados();
+
+        conjuntoConvidados.removerConvidadoPorCodConvite(1237);
+
+        System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " dentro do Set");
+
+        conjuntoConvidados.exibirConvidados();
+    }
 }
