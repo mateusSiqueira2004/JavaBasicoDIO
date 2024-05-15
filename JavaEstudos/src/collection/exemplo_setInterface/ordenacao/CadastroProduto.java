@@ -25,5 +25,17 @@ public class CadastroProduto {
         return produtoPorPreco;
     }
 
+    public static void main(String[] args) {
+        CadastroProduto cadastroProduto = new CadastroProduto();
+
+        cadastroProduto.adicionarProduto("nome 1", 123456, 20.5, 99);
+        cadastroProduto.adicionarProduto("nome 2", 123457, 26.5, 19);
+        cadastroProduto.adicionarProduto("nome 3", 123458, 30.1, 22);
+        cadastroProduto.adicionarProduto("nome 4", 123459, 50.99, 56);
+
+        cadastroProduto.exibirProdutoPorNome();
+
+        cadastroProduto.exibirProdutoPorPreco();
+    }
     
 }
