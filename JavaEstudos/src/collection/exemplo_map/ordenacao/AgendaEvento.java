@@ -15,6 +15,16 @@ public class AgendaEvento {
     }
     public void exibirAgenda(){
         Map<LocalDate, Evento> eventoOrdenado = new TreeMap<>(eventoMap);
-        
+        System.out.println(eventoOrdenado);
+    }
+    public void obterProximoEvento(){
+       LocalDate dataAtual = LocalDate.now();
+       Map<LocalDate, Evento> eventoOrdenado = new TreeMap<>(eventoMap);
+       for (Map.Entry<LocalDate, Evento> entry : eventoMap.entrySet()) {
+           if(entry.getKey().isEqual(dataAtual) || entry.getKey().isAfter(dataAtual)){
+                System.out.println("O proximo evento: "+ entry.getValue() + " acontecera na data " + entry.getKey());
+                break;
+           }
+       }
     }
 }
